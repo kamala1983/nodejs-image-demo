@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://hub.docker.com/', '676be947-0076-4981-9be9-929b224a37c9') {
+    docker.withRegistry('https://hub.docker.com', '676be947-0076-4981-9be9-929b224a37c9') {
 
         def customImage = docker.build("kkhuntia/docker-demo")
 
