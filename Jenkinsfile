@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'kkhuntia/docker-demo' }
+        docker { image 'nginx' }
     }
     stages {
         stage('Test') {
