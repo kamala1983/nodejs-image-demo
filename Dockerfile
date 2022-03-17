@@ -1,8 +1,8 @@
 FROM node:16
 
-ARG app_dir=/usr/src/app
+ARG test=/usr/src/app
 # Create app directory
-WORKDIR ${app_dir}
+WORKDIR ${test}
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
