@@ -1,6 +1,6 @@
 FROM node:16
 
-ENV app_dir /usr/src/app
+ARG app_dir /usr/src/app
 # Create app directory
 WORKDIR ${app_dir}
 
