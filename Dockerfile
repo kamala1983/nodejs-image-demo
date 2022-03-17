@@ -16,6 +16,6 @@ RUN npm install
 # Bundle app source
 #COPY . .
 
-
+ENV app_dir /dataa/
 CMD [ "node", "server.js" ]
 EXPOSE 8080
