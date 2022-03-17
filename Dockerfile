@@ -9,7 +9,9 @@ WORKDIR ${test}
 # where available (npm@5+)
 COPY package*.json ./
 
-VOLUME /usr/src/app/kk
+RUN mkdir /myvol
+RUN echo "hello world" > /myvol/greeting
+
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
